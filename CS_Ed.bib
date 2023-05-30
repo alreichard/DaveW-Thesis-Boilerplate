@@ -270,6 +270,19 @@ pages = {25–28},
 numpages = {4}
 }
 
+@inproceedings{ModelAlgStepper,
+author = {Clements, John and Flatt, Matthew and Felleisen, Matthias},
+title = {Modeling an Algebraic Stepper},
+year = {2001},
+isbn = {3540418628},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+abstract = {Programmers rely on the correctness of the tools in their programming environments. In the past, semanticists have studied the correctness of compilers and compiler analyses, which are the most important tools. In this paper, we make the case that other tools, such as debuggers and steppers, deserve semantic models, too, and that using these models can help in developing these tools.Our concrete starting point is the algebraic stepper in DrScheme, our Scheme programming environment. The algebraic stepper explains a Scheme computation in terms of an algebraic rewriting of the program text. A program is rewritten until it is in a canonical form (if it has one). The canonical form is the final result.The stepper operates within the existing evaluator, by placing breakpoints and by reconstructing source expressions from source information placed on the stack. This approach raises two questions. First, do the run-time breakpoints correspond to the steps of the reduction semantics? Second, does the debugging mechanism insert enough information to reconstruct source expressions?To answer these questions, we develop a high-level semantic model of the extended compiler and run-time machinery. Rather than modeling the evaluation as a low-level machine, we model the relevant low-level features of the stepper's implementation in a high-level reduction semantics. We expect the approach to apply to other semantics-based tools.},
+booktitle = {Proceedings of the 10th European Symposium on Programming Languages and Systems},
+pages = {320–334},
+numpages = {15},
+series = {ESOP '01}
+}
 %%%%%%%%%%%%%%  Articles published in 2002  %%%%%%%%%%%%%%
 
 @article{ASP_Clubhouse,
@@ -803,6 +816,21 @@ location = {Dallas, TX, USA},
 series = {SIGCSE '11}
 }
 
+@article{BENARI20113756,
+title = {A decade of research and development on program animation: The Jeliot experience},
+journal = {Journal of Visual Languages & Computing},
+volume = {22},
+number = {5},
+pages = {375-384},
+year = {2011},
+issn = {1045-926X},
+doi = {https://doi.org/10.1016/j.jvlc.2011.04.004},
+url = {https://www.sciencedirect.com/science/article/pii/S1045926X11000310},
+author = {Mordechai Ben-Ari and Roman Bednarik and Ronit {Ben-Bassat Levy} and Gil Ebel and Andrés Moreno and Niko Myller and Erkki Sutinen},
+keywords = {Program animation, Program visualization, Software visualization, Jeliot, Attention, Eye tracking, Conflictive animation, Phenomenography},
+abstract = {Jeliot is a program animation system for teaching and learning elementary programming that has been developed over the past decade, building on the Eliot animation system developed several years before. Extensive pedagogical research has been done on various aspects of the use of Jeliot including improvements in learning, effects on attention, and acceptance by teachers. This paper surveys this research and development, and summarizes the experience and the lessons learned.}
+}
+
 % TAG: ExperimentalDesign
 % ACM short-name 10.1145/2016911.2016919,
 % but I want a "short name" I can remember, e.g., authors initials, one word, publication year, like so:
@@ -1111,6 +1139,24 @@ location = {Vancouver, BC, Canada},
 series = {Onward! 2017}
 }
 
+@inproceedings{VarEval,
+author = {Kohn, Tobias},
+title = {Variable Evaluation: An Exploration of Novice Programmers' Understanding and Common Misconceptions},
+year = {2017},
+isbn = {9781450346986},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3017680.3017724},
+doi = {10.1145/3017680.3017724},
+abstract = {For novice programmers one of the most problematic concepts is variable assignment and evaluation. Several questions emerge in the mind of the beginner, such as what does x = 7 + 4 or x = x + 1 really mean? For instance, many students initially think that such statements store the entire calculation in variable x, evaluating the result lazily when actually needed. The common increment pattern x = x + 1 is even believed to be outright impossible. This paper discusses a multi-year project examining how high school students think of assignments and variables. In particular, where does the misconception of storing entire calculations come from? Can we explain the students' thinking and help them develop correct models of how programming works?It is particularly striking that a model of the computer as a machine with algebraic capabilities would indeed produce the observed misconceptions. The misconception might simply be attributed to the expectation that the computer performs computations the exact same way students are taught to in mathematics.},
+booktitle = {Proceedings of the 2017 ACM SIGCSE Technical Symposium on Computer Science Education},
+pages = {345–350},
+numpages = {6},
+keywords = {novices, programming, learning, misconceptions, variables},
+location = {Seattle, Washington, USA},
+series = {SIGCSE '17}
+}
+
 %%%%%%%%%%%%%%  Articles published in 2018  %%%%%%%%%%%%%%
 
 @book{FFFK18:HtDP,
@@ -1156,6 +1202,24 @@ computer programming. Similar ideas are explored in other subjects. However, thi
 seems contradictory with the way we construct knowledge: lower-level concepts support
 the development of higher-level ones. Is it possible to master higher-level concepts
 without previously mastering lower-level ones?"
+}
+
+@inproceedings{TracingAndSub,
+author = {Tunnell Wilson, Preston and Fisler, Kathi and Krishnamurthi, Shriram},
+title = {Evaluating the Tracing of Recursion in the Substitution Notional Machine},
+year = {2018},
+isbn = {9781450351034},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3159450.3159479},
+doi = {10.1145/3159450.3159479},
+abstract = {We evaluate a notional machine for recursion based on algebraic substitution. To do this, we decompose recursion into a progression of function call patterns, parameter name reuse, and data structure complexity. At each stage, we test students' ability to trace programs using substitution. We evaluate the correctness of their traces along multiple dimensions, finding that students generally do well, and also observe shortcuts and identify misconceptions. For comparison, we also have students trace two problems using a traditional, imperative notional machine. Even though the substitution model is unwieldy to use with compound data, students still perform better with it than with the traditional notional machine.},
+booktitle = {Proceedings of the 49th ACM Technical Symposium on Computer Science Education},
+pages = {1023–1028},
+numpages = {6},
+keywords = {pedagogy, substitution, tracing, recursion},
+location = {Baltimore, Maryland, USA},
+series = {SIGCSE '18}
 }
 
 % TAG: Recursion
@@ -1243,6 +1307,15 @@ pages = {38–46},
 numpages = {9}
 }
 
+@misc{wonnacott2019bridge,
+      title={A Bridge Anchored on Both Sides: Formal Deduction in Introductory CS, and Code Proofs in Discrete Math}, 
+      author={David G. Wonnacott and Peter-Michael Osera},
+      year={2019},
+      eprint={1907.04134},
+      archivePrefix={arXiv},
+      primaryClass={cs.PL}
+}
+
 %%%%%%%%%%%%%%  Articles published in 2020  %%%%%%%%%%%%%%
 
 @inproceedings{10.1145/3328778.3366834,
@@ -1299,6 +1372,39 @@ month = {apr},
 pages = {42–44},
 numpages = {3}
 }
+
+@inproceedings{NMeducationofAttention,
+author = {Fincher, Sally and Jeuring, Johan and Miller, Craig S. and Donaldson, Peter and du Boulay, Benedict and Hauswirth, Matthias and Hellas, Arto and Hermans, Felienne and Lewis, Colleen and M\"{u}hling, Andreas and Pearce, Janice L. and Petersen, Andrew},
+title = {Notional Machines in Computing Education: The Education of Attention},
+year = {2020},
+isbn = {9781450382939},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3437800.3439202},
+doi = {10.1145/3437800.3439202},
+abstract = {This report defines notional machines (NMs), and provides a series of definitional characteristics by which they may be identified. Over several sections, it includes a first-hand report of the origin of NMs, reports a systematic literature review to track the use and development of the concept, and presents a small collection of examples collected through interviews with experienced teachers. Additionally, the report presents NMs in a common format, and makes some preliminary explorations of their use in practice, including examples of instructors using multiple NMs in sequence. Approach and method are fully detailed in evidential appendices, to support replication of results and adoption/adaptation of practice.},
+booktitle = {Proceedings of the Working Group Reports on Innovation and Technology in Computer Science Education},
+pages = {21–50},
+numpages = {30},
+keywords = {computing education, notional machines},
+location = {Trondheim, Norway},
+series = {ITiCSE-WGR '20}
+}
+
+@inproceedings{pollock2020essence,
+  author    = {Josh Pollock and Grace Oh and Eunice Jun and Philip J. Guo and Zachary Tatlock},
+  title     = {The Essence of Program Semantics Visualizers: A Three-Axis Model},
+  booktitle = {Proceedings of the 11th Annual Workshop on the Intersection of HCI and PL (PLATEAU)},
+  year      = {2020},
+  month     = nov,
+  location  = {Virtual Event, USA},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  pages     = {1--11},
+  isbn      = {978-1-4503-8239-6},
+  doi       = {10.1145/3426424.3426919},
+}
+
 
 %%%%%%%%%%%%%%  Articles published in 2021  %%%%%%%%%%%%%%
 
@@ -1371,6 +1477,24 @@ location = {Yokohama, Japan},
 series = {CHI '21}
 }
 
+@inproceedings{PTdesignGuidelines,
+author = {Guo, Philip},
+title = {Ten Million Users and Ten Years Later: Python Tutor’s Design Guidelines for Building Scalable and Sustainable Research Software in Academia},
+year = {2021},
+isbn = {9781450386357},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3472749.3474819},
+doi = {10.1145/3472749.3474819},
+abstract = {Research software is often built as prototypes that never get widespread usage and are left unmaintained after a few papers get published. To counteract this trend, we propose a method for building research software with scale and sustainability in mind so that it can organically grow a large userbase and enable longer-term research. To illustrate this method, we present the design and implementation of Python Tutor (pythontutor.com), a code visualization tool that is, to our knowledge, one of the most widely-used pieces of research software developed within a university lab. Over the past decade, it has been used by over ten million people in over 180 countries. It has also contributed to 55 publications from 35 research groups in 13 countries. We distilled lessons from working on Python Tutor into three sets of design guidelines: 1) user experience design for scale and sustainability, 2) software architecture design for long-term sustainability, and 3) designing a sustainable software development workflow within academia. These guidelines can enable a student to create long-lasting software that reaches many users and facilitates research from many independent groups.},
+booktitle = {The 34th Annual ACM Symposium on User Interface Software and Technology},
+pages = {1235–1251},
+numpages = {17},
+keywords = {research software, code visualization, Python Tutor, sustainability},
+location = {Virtual Event, USA},
+series = {UIST '21}
+}
+
 %%%%%%%%%%%%%%  Articles published in 2022  %%%%%%%%%%%%%%
 @article{ASP:PBL_1,
 author = {Malik, Khalid and Zhu, Meina},
@@ -1380,6 +1504,23 @@ pages = {1-24},
 title = {Do project-based learning, hands-on activities, and flipped teaching enhance student’s learning of introductory theoretical computing classes?},
 journal = {Education and Information Technologies},
 doi = {10.1007/s10639-022-11350-8}
+}
+
+@article{TeachRecursiveProgramming,
+author = {Shukla, Gulesh and Wonnacott, David G.},
+title = {On Teaching and Testing Recursive Programming},
+year = {2022},
+issue_date = {November 2022},
+publisher = {Consortium for Computing Sciences in Colleges},
+address = {Evansville, IN, USA},
+volume = {38},
+number = {3},
+issn = {1937-4771},
+abstract = {Novice programmers face many challenges when learning to program. Recursion is often considered a particularly difficult challenge. Considerable research has been done to explore the ways in which new students understand recursive code. Our survey of this research suggests that much of the education research focuses on the use of tracing to teach recursion, and to test student understanding thereof.However, a fundamentally different approach is suggested by our informal conversations with faculty who emphasize recursion in the first or second semester. Specifically, many faculty try to develop students' ability to think abstractly about functions they call, and then leverage this thinking to help students think about recursive functions without getting lost in a morass of detail.In this paper, we consider some of the challenges of teaching recursion via abstraction, propose experiments to measure the success of this approach, and report on the results of a preliminary experiment this past spring. We close with our thoughts about pedagogy, the classification of notional machines, and tool support for various types of visualization.},
+journal = {J. Comput. Sci. Coll.},
+month = {nov},
+pages = {98–106},
+numpages = {9}
 }
 
 
@@ -1425,7 +1566,43 @@ doi = {10.1007/s10639-022-11350-8}
 
  @misc{ASP_Typing_Mozilla, title={Static typing - MDN web docs glossary: definitions of web-related terms: MDN}, 
  url={https://developer.mozilla.org/en-US/docs/Glossary/Static_typing}, journal={MDN Web Docs Glossary: Definitions of Web-related terms | MDN}, 
- author={contributors, MDN}, year={2022}} 
+ author={contributors, MDN}, year={2022}}
+ 
+ @inproceedings{clements2022notional,
+  author    = {John Clements and Shriram Krishnamurthi},
+  title     = {Towards a Notional Machine for Runtime Stacks and Scope: When Stacks Don’t Stack Up},
+  booktitle = {Proceedings of the 2022 ACM Conference on International Computing Education Research - Volume 1},
+  series    = {ICER '22},
+  year      = {2022},
+  isbn      = {9781450391948},
+  location  = {Lugano and Virtual Event, Switzerland},
+  pages     = {206--222},
+  numpages  = {17},
+  url       = {https://doi.org/10.1145/3501385.3543961},
+  doi       = {10.1145/3501385.3543961},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  keywords  = {environments, stacks, control, scope, misconceptions},
+  abstract  = {Background and Context. Modern programming is replete with features like closures, callbacks, generators, asynchronous functions, and so on. These features can be subtle in their behavior and interaction with the rest of the language, so students need notional machines that are both accurate and manageable. We specifically focus on stacks and their associated environments, which are key to understanding these features. Objectives. What conceptions do students have of stacks and environments on entry to a tertiary, upper-level programming languages course? What impact does coursework around an interpreter-based approach to programming languages education have on their understanding? What is the value of the tooling we create for students to express notional machine states? Method. Our studies were conducted at two different institutions in a tertiary, upper-level course on programming languages. The intermediate interventions were different, but both used a pre-/post-test format conducted at the beginning and near the end of the semester. We also created a Snap!-based tool to assist in notional machine description. Findings. We found that students have a relatively weak understanding of stacks and environments at entry, and exhibited various misconceptions. At one institution, which primarily relied on interpreters, we found numerous problems persisted at the end of the semester. At the other, which in addition to interpreters also used direct instruction and the Snap!-based tool, students did much better—but still not on aspects that we would have liked to have transferred from interpreters. Implications. Our findings suggest that it is important for other educators to also assess their students’ understanding of stacks and environments, especially in light of modern programming concepts. Assuming similar misconceptions are widespread, we believe the community needs to invest much more effort into notional machines, so that students can better understand the features and programs they are working with. In particular, the “standard” stack presentation is insufficient and in some cases even “harmful” (since it reinforces some misconceptions), and hence must be revised. Finally, our study forces a reconsideration of the learning objectives met by interpreters in programming languages education.},
+}
+
+@inproceedings{NMinClassroom,
+author = {Dickson, Paul E. and Richards, Tim and Becker, Brett A.},
+title = {Experiences Implementing and Utilizing a Notional Machine in the Classroom},
+year = {2022},
+isbn = {9781450390705},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3478431.3499320},
+doi = {10.1145/3478431.3499320},
+abstract = {In the computing education community, discussion is growing about the benefits of teaching programming by explicitly using notional machines to help students. To-date most work is largely theoretical and little work addresses actually using them in a classroom. This paper documents our experience of creating a notional machine for a specific course and using it in that classroom. A key point we learned while creating this notional machine is that many of the difficulties encountered were due to the concept of a notional machine being tightly coupled to students' mental models. Although not surprising, the numerous complications this brings are important to overcome. The potential amount of detail included in the notional machine is enormously influenced by the students' mental models, which are likely specific to a course, and also change throughout a semester -- and certainly across several semesters. We present lessons learned from this experience, among them that implementing a notional machine and using it in class is a non-trivial yet possibly beneficial exercise.},
+booktitle = {Proceedings of the 53rd ACM Technical Symposium on Computer Science Education - Volume 1},
+pages = {850–856},
+numpages = {7},
+keywords = {code tracing, stack traces, visualization, notional machines, code writing, pedagogy, introductory programming, program construction, mental models, cs1, memory diagrams},
+location = {Providence, RI, USA},
+series = {SIGCSE 2022}
+}
 
 % Suggested at https://tex.stackexchange.com/questions/621270/how-to-cite-a-website
 %  But, upon reading, it just points to SICP... also, it's a blog without author on this page, sigh.
